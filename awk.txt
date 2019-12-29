@@ -1,0 +1,2 @@
+# redéfinir le séparateur awk -F ";"
+cat toto.txt | awk -F ";" '{print $3}'
