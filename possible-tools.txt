@@ -1,3 +1,24 @@
+==== basics
+vim dos2unix tree wget curl git openssh
+export TERM=xterm-256color
+export EDITOR=vim
+
+# install zim
+cd /root/ ; git clone --recursive https://github.com/zimfw/zimfw.git ${ZDOTDIR:-${HOME}}/.zim
+install-zim.sh /root/
+chmod 755 /root/install-zim.sh ; cd /root ; /bin/zsh /root/install-zim.sh ; rm -f /root/.zim/modules/prompt/themes/steeef.zsh-theme
+cp steeef.zsh-theme /root/.zim/modules/prompt/themes/
+
+# install tmux
+tmux xclip
+cd  root ; mkdir -p .tmux/plugins
+cd /root/.tmux/plugins ; git clone https://github.com/tmux-plugins/tpm.git
+cd /root/.tmux/plugins ; git clone https://github.com/tmux-plugins/tmux-sensible.git
+cd /root/.tmux/plugins ; git clone https://github.com/tmux-plugins/tmux-resurrect.git
+cp .tmux.conf /root/
+chmod 700 /root/.tmux.conf ; tmux source /root/.tmux.conf >& /dev/null | true
+
+==== misc
 tldr
 * ranger (yum install ranger | https://www.vultr.com/docs/how-to-install-ranger-terminal-file-manager-on-linux)
 * vifm (yum install vifm)
@@ -11,4 +32,16 @@ notify-send "message" -u critical -i face-worriedd
                       -u normal -t 7500 -i checkbox-checked-symbolic
 calcurse
 
+neofetch toilet figlet watch fortune cowsay cowthink boxes lolcat cmatrix sl slurm tty-clock
+
+not found : libaa-bin bash-pipes gotop-bin
+
+neofetch : https://www.cyberciti.biz/howto/neofetch-awesome-system-info-bash-script-for-linux-unix-macos/
+
+ppm install Term-Animation
+http://www.robobunny.com/projects/asciiquarium/asciiquarium.tar.gz
+
+other : https://arcolinux.com/installing-fun-stuff-for-the-terminal-on-arcolinux/
+======= windows
 windows terminal
+conemu
