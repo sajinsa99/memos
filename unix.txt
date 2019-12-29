@@ -1,0 +1,158 @@
+!! : execute dernière commande
+
+ctrl+r puis le mot à chercher dans l'historique des commandes, le curseur se positonne sur le mot
+
+esc+. reprend le dernier argument de la précédente commande
+eg :
+vim a b
+exc.  => b
+
+esc+# : comment la ligne de commande en cour, et fait enter, peut servir pour préparer une commande
+ctrl+d : efface la lettre sur le curseur
+ctrl+w : efface à gauche jusqu'au début du mot
+
+for i in $(seq 10); do echo $i;done : execute 10x
+
+open an editor to run a command
+ctrl+x+e
+=> ça ouvre un éditeur, vim par exemple, on tape sa ou ses commandes (sur 1 seule ligne)  et :wq pour l'éxecuter
+
+create a super fast ram disk
+mkdir -p /mnt/ram
+mount -t tmpfs tmpfs /mnt/ram -o size=8192M
+
+don't add command to history : add 1 space before the command (fonctionne pas toujours)
+ ls -l
+
+fix a really long command that you messed up
+fc
+rappelle la commande dans vi, on peut la compléter (sur 1 seule ligne) et :wq pour executer
+
+mkdir -p folder/{sub1,sub2}/{sub1,sub2,sub3}
+[root@9619496c74c1@2019-12-13 20:33:10:~/test(4)]>tree .
+.
+`-- folder
+    |-- sub1
+    |   |-- sub1
+    |   |-- sub2
+    |   `-- sub3
+    `-- sub2
+        |-- sub1
+        |-- sub2
+        `-- sub3
+
+mkdir -p folder/{1..5}/{1..5}
+tree .
+.
+`-- folder
+    |-- 1
+    |   |-- 1
+    |   |-- 2
+    |   |-- 3
+    |   |-- 4
+    |   `-- 5
+    |-- 2
+    |   |-- 1
+    |   |-- 2
+    |   |-- 3
+    |   |-- 4
+    |   `-- 5
+    |-- 3
+    |   |-- 1
+    |   |-- 2
+    |   |-- 3
+    |   |-- 4
+    |   `-- 5
+    |-- 4
+    |   |-- 1
+    |   |-- 2
+    |   |-- 3
+    |   |-- 4
+    |   `-- 5
+    `-- 5
+        |-- 1
+        |-- 2
+        |-- 3
+        |-- 4
+        `-- 5
+
+intercept stdout and log to file
+cat file | tee -a log | cat > /dev/null
+
+# exit terminal but leave all processes running
+disown -a && exit
+
+create path and cd inside it
+mkdir -p path/to/new/dir ; cd !$ 
+
+copy dir/file with same rootname
+eg copy toto -> tototiti:
+cp toto{,titi} =>
+toto
+tototiti
+
+cut paste in line command
+ctrl-k : from cursor, cut end of command line (O position cursor) if docker runO-it 310e5193c0f => docker run
+ctrl-u : from cursor, cut beginning of command line (O position cursor) if docker runO-it 310e5193c0f =>-it 310e5193c0f
+ctrl-w : cut previous word of cursor in command line (O position cursor) if docker runO-it 310e5193c0f =>docker -it 310e5193c0f
+ctrl-y : to paste what cut previously,before the cursor
+
+better to run
+less +F file
+instead tail -f file
+
+set & shopt
+====
+pour connaître l'état des options de la commande interne set : set –o
+pour activer une option de la commande interne set : set –o option
+pour désactiver une option de la commande interne set : set +o option
+pour connaître l'état des options de la commande interne shopt : shopt
+pour activer une option de la commande interne shopt : shopt -s option
+pour désactiver une option de la commande interne shopt : shopt -u option
+shopt optons:
+dotglob signifie que les noms d’entrées commençant par . (caractère point) seront également traités
+nocaseglob signifie que les majuscules et minuscules ne seront pas différenciées
+nullglob signifie qu’un modèle ne correspondant à aucune entrée sera remplacé par une chaîne vide et non par le modèle lui-même
+failglob signifie qu’un modèle ne correspondant à aucune entrée provoquera une erreur.
+exemples :
+----------
+$ ls -la
+total 8
+drwxr-xr-x 2 sanchis sanchis 4096 nov.  24  2011 .
+drwxr-xr-x 5 sanchis sanchis 4096 nov.  27  2012 ..
+-rw-r--r-- 1 sanchis sanchis    0 nov.  24  2011 .sessions
+-rw-r--r-- 1 sanchis sanchis    0 nov.  24  2011 video
+-rw-r--r-- 1 sanchis sanchis    0 nov.  24  2011 viDEos
+$ 
+$ echo p*
+p*					=> comportement par défaut
+$ 
+$ shopt -s nullglob
+$ 
+$ echo p*
+					=>  chaîne vide	
+$ 
+$ shopt -s failglob
+$
+$ echo p*
+bash: Pas de correspondance : p*	=> message d’erreur
+$
+$ echo *s*
+viDEos					=> comportement par défaut
+$ 
+$ shopt -s dotglob
+$ 
+$ echo *s*
+.session viDEos			=> fichier caché .session pris en compte
+$ 
+$ echo *d*					
+Video					=> comportement par défaut
+$ 
+$ shopt -s nocaseglob
+$ 
+$ echo *d*
+video viDEos
+----------
+
+
+--- systemd-analyze critical-chain graphical.target ---
