@@ -1,0 +1,26 @@
+  - build docker image locally :
+docker build -f Dockerfile -t devops-eds-bl  .
+
+    - run container :
+docker run -it `docker images | grep ansible-eds-bl | awk {'print $3'}`
+
+    - run ansible inside docker container :
+cd ~/trainings/playbooks
+ansible-playbook playbook.yml
+
+    - to create a new docker image from the container updated by ansible,and still running :
+# in a new another terminal:
+docker ps | grep `docker images | grep ansible-eds-bl | awk {'print $3'}`
+# you should have something like that :
+83a1f3c63a74        57d3d81ac871        "/bin/bash"         4 minutes ago       Up 4 minutes    festive_mestorf
+docker commit festive_mestorf
+sha256:4343381f999c43e5b33a7170185a5fbfc0e9eb074e25c939f9f7d79fdd1022f8
+docker images
+# you should have something like that:
+<none>              <none>              4343381f999c        6 seconds ago       346MB
+# the image id is the beginning of the sha256:... and repository/tag should be "none"
+docker tag 4343381f999c toto
+docker images
+# you should find the same tag '4343381f999c" , with the tag name given above "toto":
+toto                latest              4343381f999c        About a minute ago   346MB
+# none, with tag "4343381f999c" should be vanished/renamed to "toto:latest"
