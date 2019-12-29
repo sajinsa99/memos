@@ -1,0 +1,14 @@
+tldr
+* ranger (yum install ranger | https://www.vultr.com/docs/how-to-install-ranger-terminal-file-manager-on-linux)
+* vifm (yum install vifm)
+yum install nnn
+yum install lfm
+fish  http://hyperpolyglot.org/unix-shells
+mdp (https://gitlab.com/xavki/syadmin_tips/blob/master/11-mdp-slides/script-install.sh)
+libnotify-bin
+  commande : notify-send
+notify-send "message" -u critical -i face-worriedd
+                      -u normal -t 7500 -i checkbox-checked-symbolic
+calcurse
+
+windows terminal
