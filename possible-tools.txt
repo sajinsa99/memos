@@ -31,6 +31,7 @@ libnotify-bin
 notify-send "message" -u critical -i face-worriedd
                       -u normal -t 7500 -i checkbox-checked-symbolic
 calcurse
+telnet mapscii.me
 
 neofetch toilet figlet watch fortune cowsay cowthink boxes lolcat cmatrix sl slurm tty-clock
 
