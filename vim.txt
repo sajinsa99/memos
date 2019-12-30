@@ -14,8 +14,12 @@ ggvG=
 D) close file without exiting vim
 :bd
 
-E) vim -O fileA fileB : open the 2 files in 2 vertical windows (-o for horizontal)
+E) vim -O fileA fileB : open the 2 files in 2 vertical splitted windows (-o for horizontal)
 ctrl+w+ h|j|k|l to navigate between windows
+
+F) vim -p : fileA fileB : open the 2 files in 2 tabs
+to navigate between tab :
+gt
 
 ------
 
