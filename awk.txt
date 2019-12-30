@@ -5,4 +5,6 @@ cat toto.txt | awk -F ";" '{print $3}'
 # utile si nom de fichier avec des espaces.
 # si le 'ls -l', la 9è colonne c'est le nom du fichier, i=9
 # à adapter
+# ORS : séparateur
+# NF : numéro dernière colonne
 ls -l | awk '{ORS=""; for(i=9;i<=NF;i++) print $i;print "\n"}'
