@@ -21,6 +21,13 @@ F) vim -p : fileA fileB : open the 2 files in 2 tabs
 to navigate between tab :
 gt
 
+G) in vim, open a file in a new tab:
+:tabnew filename
+in a horizontal split :
+:sp filename
+in a vertical split :
+:vsp filename
+
 ------
 
 :w (enregistrer le fichier en cours d'édition sans quitter)
