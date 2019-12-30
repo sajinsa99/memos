@@ -1,0 +1,4 @@
+==== find in a loop 'for'
+# search all files with time "18:5*" in current dir,
+# and search in another folder if this file exists as well
+for file in `ltr | grep "18:5" | awk '{ORS=""; for(i=9;i<=NF;i++) print $i;print "\n"}'`; do echo $file; find ../Documents/dev/docs/ -name "$file" -exec  echo {} + ;done
