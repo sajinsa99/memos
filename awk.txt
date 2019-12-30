@@ -1,2 +1,8 @@
 # redéfinir le séparateur awk -F ";"
 cat toto.txt | awk -F ";" '{print $3}'
+
+# affiche toutes les colonnes à partir d'un numéro de colonne
+# utile si nom de fichier avec des espaces.
+# si le 'ls -l', la 9è colonne c'est le nom du fichier, i=9
+# à adapter
+ls -l | awk '{ORS=""; for(i=9;i<=NF;i++) print $i;print "\n"}'
