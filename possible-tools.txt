@@ -44,6 +44,8 @@ glances : https://github.com/nicolargo/glances
 
 asciinema : http://blog.onkeyboardst.net/post/Des-vid%C3%A9os-de-vos-sessions-de-Terminal-avec-asciinema-%21
 
+nmon
+
 ppm install Term-Animation
 http://www.robobunny.com/projects/asciiquarium/asciiquarium.tar.gz
 
