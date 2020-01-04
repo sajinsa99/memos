@@ -42,6 +42,8 @@ neofetch : https://www.cyberciti.biz/howto/neofetch-awesome-system-info-bash-scr
 
 glances : https://github.com/nicolargo/glances
 
+asciinema : http://blog.onkeyboardst.net/post/Des-vid%C3%A9os-de-vos-sessions-de-Terminal-avec-asciinema-%21
+
 ppm install Term-Animation
 http://www.robobunny.com/projects/asciiquarium/asciiquarium.tar.gz
 
