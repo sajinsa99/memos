@@ -1,5 +1,8 @@
 !! : execute dernière commande
 
+uptime : retourne le temps depuis lequel le serveur est démarré.
+vmstat : activité du système et des informations à ce sujet et aussi sur le matériel
+
 ctrl+r puis le mot à chercher dans l'historique des commandes, le curseur se positonne sur le mot
 
 esc+. reprend le dernier argument de la précédente commande
