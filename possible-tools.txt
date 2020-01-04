@@ -40,6 +40,8 @@ not found : libaa-bin bash-pipes gotop-bin
 
 neofetch : https://www.cyberciti.biz/howto/neofetch-awesome-system-info-bash-script-for-linux-unix-macos/
 
+glances : https://github.com/nicolargo/glances
+
 ppm install Term-Animation
 http://www.robobunny.com/projects/asciiquarium/asciiquarium.tar.gz
 
