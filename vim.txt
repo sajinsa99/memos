@@ -111,6 +111,7 @@ Notez que la portée de l'action de Y est différente de celle de D ; en effet, 
 
 misc:
 =====
+vim un_fichier.txt +15 : ouvre le fichier à la ligne 15
 effacer intérieur de ({... faire diw ou ciw pour et effacer et se mettre en mode insert
 copier intérieur, même principe : yiw
 incrémenter le 1er chiffre rencontré dans une ligne : Ctrl+a
