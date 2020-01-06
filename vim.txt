@@ -163,3 +163,6 @@ si fichier root
 
 enlève tous les ^M
 :%s/\r//g
+
+enlève tous les motifs comprenant "regexp"
+:g/regexp/d
