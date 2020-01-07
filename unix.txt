@@ -116,6 +116,7 @@ dotglob signifie que les noms d’entrées commençant par . (caractère point) 
 nocaseglob signifie que les majuscules et minuscules ne seront pas différenciées
 nullglob signifie qu’un modèle ne correspondant à aucune entrée sera remplacé par une chaîne vide et non par le modèle lui-même
 failglob signifie qu’un modèle ne correspondant à aucune entrée provoquera une erreur.
+extglob: expression
 exemples :
 ----------
 $ ls -la
@@ -154,6 +155,14 @@ $ shopt -s nocaseglob
 $ 
 $ echo *d*
 video viDEos
+$ shopt -s extglob
+$ ls -l cali_core?(3|4)
+list content of cali_core3/ and cali_core4
+?(expression|expression|...) : existe ou pas
+*(expression|expression|...) : existe pas à n fois
++(expression|expression|...) : existe au moins une fois, à n fois
+@(expression|expression|...) : si existe; 1 seule fois
+!(expression|expression|...) : n'existe pas
 ----------
 
 
