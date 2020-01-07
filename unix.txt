@@ -180,4 +180,9 @@ dans même fichier
 command 1> fichier 2>&1
 =
 command 2> fichier 1>&2
+
+misc:
+(command 1;command 2) : execute commands dans processus fils
+{command 1;command 2 ;} : execute commands dans shell courant (la dernieère commande doit être suivie obligatoirement par un ';')
+
 --- systemd-analyze critical-chain graphical.target ---
