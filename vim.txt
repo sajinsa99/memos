@@ -15,7 +15,7 @@ D) close file without exiting vim
 :bd
 
 E) vim -O fileA fileB : open the 2 files in 2 vertical splitted windows (-o for horizontal)
-ctrl+w+ h|j|k|l to navigate between windows
+[ctrl]-w- h|j|k|l to navigate between windows
 
 F) vim -p : fileA fileB : open the 2 files in 2 tabs
 to navigate between tab :
@@ -91,10 +91,10 @@ n	- Rechercher l'occurence suivante
 N	- Rechercher l'occurence précédente
 
 sélections:
-V       - selects entire lines 
-v       - selects range of text
-ctrl-v  - selects columns
-gv      - reselect block
+V         - selects entire lines 
+v         - selects range of text
+[ctrl]-v  - selects columns
+gv        - reselect block
 
 copiés-collés:
 ==============
@@ -114,8 +114,8 @@ misc:
 vim un_fichier.txt +15 : ouvre le fichier à la ligne 15
 effacer intérieur de ({... faire diw ou ciw pour et effacer et se mettre en mode insert
 copier intérieur, même principe : yiw
-incrémenter le 1er chiffre rencontré dans une ligne : Ctrl+a
-pour décrémenter : Ctrl+x
+incrémenter le 1er chiffre rencontré dans une ligne : [ctrl]-a
+pour décrémenter : [ctrl]-x
 
 markers:
 ========
@@ -136,22 +136,22 @@ Using tags makes it easier to jump to certain parts of your programs. First run 
 
  :tag TAB            - list the known tags
  :tag function_name  - jump to that function
- ctrl-t   - goes to previous spot where you called :tag
- ctrl-]   - calls :tag on the word under the cursor        
- :ptag    - open tag in preview window (also ctrl-w })
+ [ctrl]-t   - goes to previous spot where you called :tag
+ [ctrl]-]   - calls :tag on the word under the cursor        
+ :ptag    - open tag in preview window (also [ctrl]-w })
  :pclose  - close preview window
  
  multiple windows
  ================
 If you want, you can probably do everything from one vim session! :) Here are some commands to turn one vim session (inside one xterm) into multiple windows.
 
- :e filename      - edit another file
- :split filename  - split window and load another file
- ctrl-w up arrow  - move cursor up a window
- ctrl-w ctrl-w    - move cursor to another window (cycle)
- ctrl-w_          - maximize current window
- ctrl-w=          - make all equal size
- 10 ctrl-w+       - increase window size by 10 lines
+ :e filename        - edit another file
+ :split filename    - split window and load another file
+ [ctrl]-w up arrow  - move cursor up a window
+ [ctrl]-w [ctrl]-w  - move cursor to another window (cycle)
+ [ctrl]-w_          - maximize current window
+ [ctrl]-w=          - make all equal size
+ 10 [ctrl]-w+      - increase window size by 10 lines
  :vsplit file     - vertical split
  :sview file      - same as split, but readonly
  :hide            - close current window
