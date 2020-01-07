@@ -164,6 +164,20 @@ list content of cali_core3/ and cali_core4
 @(expression|expression|...) : si existe; 1 seule fois
 !(expression|expression|...) : n'existe pas
 ----------
-
-
+redirections:
+ls > results.txt
+empecher l'écrasement
+set -o noclobber
+ls > results.txt
+=> impossible décraser results.txt
+pour forcer:
+ls >| results.txt
+STDOUT/STDERR
+ls 1> results.txt 2> error
+=
+ls 2> error 1> results.txt
+dans même fichier
+command 1> fichier 2>&1
+=
+command 2> fichier 1>&2
 --- systemd-analyze critical-chain graphical.target ---
