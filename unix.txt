@@ -185,4 +185,9 @@ misc:
 (command 1;command 2) : execute commands dans processus fils
 {command 1;command 2 ;} : execute commands dans shell courant (la dernieère commande doit être suivie obligatoirement par un ';')
 
+variables:
+var=`cmd1 ; cmd2 | cmd3`
+ou
+var=$(cmd1 ; cmd2 | cmd3)
+
 --- systemd-analyze critical-chain graphical.target ---
