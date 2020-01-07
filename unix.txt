@@ -3,21 +3,20 @@
 uptime : retourne le temps depuis lequel le serveur est démarré.
 vmstat : activité du système et des informations à ce sujet et aussi sur le matériel
 
-ctrl+r puis le mot à chercher dans l'historique des commandes, le curseur se positonne sur le mot
+[ctrl]-r puis le mot à chercher dans l'historique des commandes, le curseur se positonne sur le mot
 
-esc+. reprend le dernier argument de la précédente commande
+[esc]+. reprend le dernier argument de la précédente commande
 eg :
 vim a b
-exc.  => b
-
-esc+# : comment la ligne de commande en cour, et fait enter, peut servir pour préparer une commande
-ctrl+d : efface la lettre sur le curseur
-ctrl+w : efface à gauche jusqu'au début du mot
+[esc]-.  => b
+[esc]-# : comment la ligne de commande en cour, et fait enter, peut servir pour préparer une commande
+[ctrl]-d : efface la lettre sur le curseur
+[ctrl]-w : efface à gauche jusqu'au début du mot
 
 for i in $(seq 10); do echo $i;done : execute 10x
 
 open an editor to run a command
-ctrl+x+e
+[ctrl]+x+e
 => ça ouvre un éditeur, vim par exemple, on tape sa ou ses commandes (sur 1 seule ligne)  et :wq pour l'éxecuter
 
 create a super fast ram disk
@@ -89,16 +88,16 @@ create path and cd inside it
 mkdir -p path/to/new/dir ; cd !$ 
 
 copy dir/file with same rootname
-eg copy toto -> tototiti:
+eg : copy toto -> tototiti:
 cp toto{,titi} =>
 toto
 tototiti
 
 cut paste in line command
-ctrl-k : from cursor, cut end of command line (O position cursor) if docker runO-it 310e5193c0f => docker run
-ctrl-u : from cursor, cut beginning of command line (O position cursor) if docker runO-it 310e5193c0f =>-it 310e5193c0f
-ctrl-w : cut previous word of cursor in command line (O position cursor) if docker runO-it 310e5193c0f =>docker -it 310e5193c0f
-ctrl-y : to paste what cut previously,before the cursor
+[ctrl]-k : from cursor, cut end of command line (O position cursor) if docker runO-it 310e5193c0f => docker run
+[ctrl]-u : from cursor, cut beginning of command line (O position cursor) if docker runO-it 310e5193c0f =>-it 310e5193c0f
+[ctrl]-w : cut previous word of cursor in command line (O position cursor) if docker runO-it 310e5193c0f =>docker -it 310e5193c0f
+[ctrl]-y : to paste what cut previously,before the cursor
 
 better to run
 less +F file
