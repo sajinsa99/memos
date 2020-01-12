@@ -167,3 +167,6 @@ enlève tous les ^M
 
 enlève tous les motifs comprenant "regexp"
 :g/regexp/d
+
+reconnaitre langage si possible
+:filetype detect
