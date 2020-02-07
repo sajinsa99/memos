@@ -1,0 +1,20 @@
+d$ efface à partir du curseur jusqu’à la fin de ligne
+dd efface toute la ligne où se trouve le curseur
+3dd efface 3 lignes à partir de la ligne où se trouve le curseur
+ggdG pour vider un fichier
+
+vim fichier +"3d|x" : efface la ligne 3 du fichier
+
+fix a
+fix b
+fix c
+fix d
+C-v puis sélection du mot à changer (ic « fix ») avec la flèche droite , à partir de n’importe quelle ligne, puis flèche bas pour sélectionner les « fix »,puis ‘c’ puis taper le nouveau mot (ici ’s’) puis Esc
+
+:r fileb   , inserre contenu fileb en dessous du cursor
+:0r fileb  , inserre contenu fileb au début du fichier
+:r !ls && pwf , inserre résultat de ‘ls && pwd’
+
+:x , sauvegarde si changement et sort de vim
+:w! file , sauvegarde en écrasant file
+:sav newfile , sauvegarde buffer dans un nouveau fichier
