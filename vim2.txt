@@ -18,3 +18,7 @@ C-v puis sélection du mot à changer (ic « fix ») avec la flèche droite , 
 :x , sauvegarde si changement et sort de vim
 :w! file , sauvegarde en écrasant file
 :sav newfile , sauvegarde buffer dans un nouveau fichier
+
+
+Ctrl-z # depuis vim pour aller dans le shell
+fg     # depuis le shell pour retourner dans vim
