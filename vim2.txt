@@ -22,3 +22,5 @@ C-v puis sélection du mot à changer (ic « fix ») avec la flèche droite , 
 
 Ctrl-z # depuis vim pour aller dans le shell
 fg     # depuis le shell pour retourner dans vim
+
+vim +45 file # ouvre file à la ligne 45
