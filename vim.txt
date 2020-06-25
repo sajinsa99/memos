@@ -51,6 +51,9 @@ jd : supprime la ligne du dessous
 guu : mettre la ligne courante en minuscule
 gUU : mettre la ligne courante en majuscule
 
+ggdG : efface le contenu du fichier
+Go : va à la fin du fichier et ajoute une nouvelle ligne et se met en mode insert
+
 déplacement ligne curseur :
 ==========================
 
