@@ -53,6 +53,7 @@ gUU : mettre la ligne courante en majuscule
 
 ggdG : efface le contenu du fichier
 Go : va à la fin du fichier et ajoute une nouvelle ligne et se met en mode insert
+:wn : si plusieurs fichiers ouverts, sauve et passe au suivante
 
 déplacement ligne curseur :
 ==========================
