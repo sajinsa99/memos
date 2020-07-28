@@ -46,6 +46,10 @@ asciinema : http://blog.onkeyboardst.net/post/Des-vid%C3%A9os-de-vos-sessions-de
 
 nmon
 
+brew install bat (better cat)
+brew install diff-so-fancy (better dif)
+brew install exa (better ls)
+
 ppm install Term-Animation
 http://www.robobunny.com/projects/asciiquarium/asciiquarium.tar.gz
 
