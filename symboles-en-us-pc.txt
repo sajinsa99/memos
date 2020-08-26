@@ -1,3 +1,5 @@
+use right for alt & maj
+
 [alt 1 ] -> ¡
   [alt 2 ] -> ² (puissance carrée)
   [alt 3 ] -> ³ (puissance cube)
