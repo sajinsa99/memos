@@ -1,0 +1,60 @@
+[alt 1 ] -> ¡
+  [alt 2 ] -> ² (puissance carrée)
+  [alt 3 ] -> ³ (puissance cube)
+[alt 4 ] -> ¤
+  [alt 5 ] -> € (euro)
+  [alt 6 ] -> ¼ (quart)
+  [alt 7 ] -> ½ (demi)
+  [alt 8 ] -> ¾ (trois-quart 3/4)
+[alt 9 ] -> ‘
+[alt 0 ] -> ’
+  [alt - ] -> ¥ (yen)
+[alt = ] -> ×
+[alt q ] -> ä
+[alt w ] -> å
+[alt e ] -> é
+  [alt r ] -> ® (Registered )
+[alt t ] -> þ
+[alt y ] -> ü
+[alt u ] -> ú
+[alt i ] -> í
+[alt o ] -> ó
+[alt p ] -> ö
+[alt [ ] -> «
+[alt ] ] -> »
+[alt \ ] -> ¬
+[alt a ] -> á
+[alt s ] -> ß
+[alt d ] -> ð
+[alt l ] -> ø
+[alt ; ] -> ¶
+[alt ' ] -> ´
+[alt z ] -> æ
+  [alt c ] -> © (copyright)
+[alt n ] -> ñ
+  [alt m ] -> µ (micro)
+[alt , ] -> ç
+[alt / ] -> ¿
+
+[alt maj 1 ] -> ¹
+  [alt maj 4 ] -> £ (livre sterling)
+  [alt maj = ] -> ÷ (division)
+[alt maj q ] -> Ä
+[alt maj w ] -> Å
+[alt maj e ] -> É
+[alt maj t ] -> Þ
+[alt maj y ] -> Ü
+[alt maj i ] -> Í
+[alt maj o ] -> Ó
+[alt maj p ] -> Ö
+[alt maj \ ] -> ¦
+[alt maj a ] -> Á
+[alt maj s ] -> §
+[alt maj d ] -> Ð
+[alt maj l ] -> Ø
+  [alt maj ; ] -> ° (degré)
+[alt maj ' ] -> ¨
+[alt maj z ] -> Æ
+[alt maj c ] -> ¢
+[alt maj n ] -> Ñ
+[alt maj , ] -> Ç
