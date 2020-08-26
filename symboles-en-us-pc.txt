@@ -1,4 +1,4 @@
-use right for alt & maj
+utiliser alt & maj de droite
 
 [alt 1 ] -> ¡
   [alt 2 ] -> ² (puissance carrée)
