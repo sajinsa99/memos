@@ -49,6 +49,7 @@ nmon
 brew install bat (better cat)
 brew install diff-so-fancy (better dif)
 brew install exa (better ls)
+brew install icdiff (better diff)
 
 ppm install Term-Animation
 http://www.robobunny.com/projects/asciiquarium/asciiquarium.tar.gz
