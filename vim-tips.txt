@@ -1,0 +1,209 @@
+A) to display spaces,tabs,eol :
+:set list
+
+B) to display line number on the left :
+:set nu
+: set nu! to mask line number
+
+by default, A) & B) are disabled for copy-paste
+
+C) to indent the whole file
+: set smartindent
+ggvG=
+
+D) close file without exiting vim
+:bd
+
+E) vim -O fileA fileB : open the 2 files in 2 vertical splitted windows (-o for horizontal)
+[ctrl]-w- h|j|k|l to navigate between windows
+
+F) vim -p : fileA fileB : open the 2 files in 2 tabs
+to navigate between tab :
+gt
+
+G) in vim, open a file in a new tab:
+:tabnew filename
+in a horizontal split :
+:sp filename
+in a vertical split :
+:vsp filename
+
+------
+
+:w (enregistrer le fichier en cours d'édition sans quitter)
+:w /chemin/vers/le/fichier (enregistrer sous )
+:x ou :wq (enregistrer et quiter)
+:q (quitter)
+
+:1 (aller au début du fichier) ou 1G
+:10 (aller à la 10e ligne) ou 10G
+:$ (aller à la fin du fichier) ou G
+$ (place le curseur à la fin d'une ligne)
+
+u (annuler)
+. (refaire)
+
+:e! (recharge le fichier en annulant les modifications)
+
+d$ : supprime jusqu'à la fin de la ligne
+jd : supprime la ligne du dessous
+
+guu : mettre la ligne courante en minuscule
+gUU : mettre la ligne courante en majuscule
+
+ggdG : efface le contenu du fichier
+Go : va à la fin du fichier et ajoute une nouvelle ligne et se met en mode insert
+:wn : si plusieurs fichiers ouverts, sauve et passe au suivante
+
+déplacement ligne curseur :
+==========================
+
+[ctrl] + f : Descend d'un écran
+[ctrl] + b : Remonte d'un écran
+[ctrl] + d : Descend d'1/2 écran
+[ctrl] + u : Remonte d'1/2 écran
+
+H : En haut de l'écran
+M :  Au milieu de l'écran
+L : En bas de l'é
+
+déplacement curseur :
+===================
+h : Décale d'un caractère à gauche
+j : Descend d'une ligne
+k : Monte d'une ligne
+l : Décale d'un caractère à droite
+0 ou espace^: Au début de la ligne
+$ A la fin de la ligne
+w:  Au début du mot suivant
+e : A la fin du mot suivant
+b : Recule d'un mot
+
+Insertion d'un texte:
+====================
+i : Active l'insertion
+a : Active le mode insertion un caractère après le curseur
+I : Insère au début de la ligne
+A : Insère à la fin de la ligne
+O : Insère une ligne en dessus du curseur et passe en mode insertion
+o : Insère une ligne en dessous du curseur et passe en mode insertion
+
+recherche:
+==========
+* - search for word currently under cursor
+n	- Rechercher l'occurence suivante
+N	- Rechercher l'occurence précédente
+
+sélections:
+V         - selects entire lines 
+v         - selects range of text
+[ctrl]-v  - selects columns
+gv        - reselect block
+
+copiés-collés:
+==============
+        y       : copie la sélection. (Emploie le mode visuel ou copie implicitement tel yas vers yank une phrase - voir Mnemoniques ci-dessous)
+        yy      : copie la ligne courante.
+        Y       : copie la ligne courante.
+        d       : supprime (coupe) la sélection. Même usage que y.
+        dd      : supprime (coupe) la ligne courante.
+        D       : supprime depuis ici jusqu'à la fin de la ligne.
+        p       : copie la sélection (Coller est intelligent. Si vous copiez une ligne entière, il la placera au-dessous de la ligne courante .) Reportez-vous à 'ddp' ci-dessous dans claviers combos
+Notez que la portée de l'action de Y est différente de celle de D ; en effet, Y = yy. Si vous souhaitez modifier ce comportement, consultez la partie "Associer des commandes et leurs abréviations" plus loin.
+
+    fy     : copie la sélection et la colle dans le registre f
+
+misc:
+=====
+vim un_fichier.txt +15 : ouvre le fichier à la ligne 15
+effacer intérieur de ({... faire diw ou ciw pour et effacer et se mettre en mode insert
+copier intérieur, même principe : yiw
+incrémenter le 1er chiffre rencontré dans une ligne : [ctrl]-a
+pour décrémenter : [ctrl]-x
+
+markers:
+========
+ mk      - mark current position (can use a-z)
+ 'k      - move to mark k
+ d'k     - delete from current position to mark k
+ 
+ folding (collape/expand):
+ ========================
+ select block, then :fold
+    zo - open
+    zc - close
+ 
+ tags:
+ =====
+ tags
+Using tags makes it easier to jump to certain parts of your programs. First run ctags from the UNIX command line on your source files (e.g., ctags prog.c or ctags -R to recurse) to generate a "tags" file, then use these while editing your source files:
+
+ :tag TAB            - list the known tags
+ :tag function_name  - jump to that function
+ [ctrl]-t   - goes to previous spot where you called :tag
+ [ctrl]-]   - calls :tag on the word under the cursor        
+ :ptag    - open tag in preview window (also [ctrl]-w })
+ :pclose  - close preview window
+ 
+ multiple windows
+ ================
+If you want, you can probably do everything from one vim session! :) Here are some commands to turn one vim session (inside one xterm) into multiple windows.
+
+ :e filename        - edit another file
+ :split filename    - split window and load another file
+ [ctrl]-w up arrow  - move cursor up a window
+ [ctrl]-w [ctrl]-w  - move cursor to another window (cycle)
+ [ctrl]-w_          - maximize current window
+ [ctrl]-w=          - make all equal size
+ 10 [ctrl]-w+      - increase window size by 10 lines
+ :vsplit file     - vertical split
+ :sview file      - same as split, but readonly
+ :hide            - close current window
+ :only            - keep only this window open
+ :ls              - show current buffers
+ :b 2             - open buffer #2 in this window
+
+autocompletion
+==============
+ctrl+n ou ctrl+p
+
+si fichier root
+:w !sudo tee % (puis entrée pour charger)
+
+enlève tous les ^M
+:%s/\r//g
+
+enlève tous les motifs comprenant "regexp"
+:g/regexp/d
+
+reconnaitre langage si possible
+:filetype detect
+
+misc
+====
+d$ efface à partir du curseur jusqu’à la fin de ligne
+dd efface toute la ligne où se trouve le curseur
+3dd efface 3 lignes à partir de la ligne où se trouve le curseur
+ggdG pour vider un fichier
+
+vim fichier +"3d|x" : efface la ligne 3 du fichier
+
+fix a
+fix b
+fix c
+fix d
+C-v puis sélection du mot à changer (ic « fix ») avec la flèche droite , à partir de n’importe quelle ligne, puis flèche bas pour sélectionner les « fix »,puis ‘c’ puis taper le nouveau mot (ici ’s’) puis Esc
+
+:r fileb   , inserre contenu fileb en dessous du cursor
+:0r fileb  , inserre contenu fileb au début du fichier
+:r !ls && pwf , inserre résultat de ‘ls && pwd’
+
+:x , sauvegarde si changement et sort de vim
+:w! file , sauvegarde en écrasant file
+:sav newfile , sauvegarde buffer dans un nouveau fichier
+
+
+Ctrl-z # depuis vim pour aller dans le shell
+fg     # depuis le shell pour retourner dans vim
+
+vim +45 file # ouvre file à la ligne 45
