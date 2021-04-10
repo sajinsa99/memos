@@ -53,6 +53,7 @@ brew install icdiff (much better diff)
 brew install ripgrep (better grep)
 brew install fd (better find)
 
+https://www.cyberciti.biz/open-source/install-ncdu-on-linux-unix-ncurses-disk-usage/
 
 ppm install Term-Animation
 http://www.robobunny.com/projects/asciiquarium/asciiquarium.tar.gz
