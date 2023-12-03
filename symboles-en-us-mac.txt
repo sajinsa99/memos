@@ -1,0 +1,95 @@
+https://www.ohmymac.fr/caracteres-speciaux-sur-mac-comment-les-taper/
+
+•	alt + @
+	alt + &
+ë	alt + é
+“	alt + « 
+‘	alt + ‘
+{	alt + (
+}	alt + )
+¶	alt + §
+«	alt + è
+¡	alt + !
+Ç	alt + ç
+ø	alt + à
+—	alt + –
+æ	alt + a
+Â	alt + z
+ê	alt + e
+®	alt + r
+†	alt + t
+Ú	alt + y
+º	alt + u
+î	alt + i
+œ	alt + o
+π	alt + p
+ô	alt + ^
+€	alt + $ (euro)
+‡	alt + q
+Ò	alt + s
+∂	alt + d
+ƒ	alt + f
+ﬁ	alt + g
+Ì	alt + h
+Ï	alt + j
+È	alt + k
+¬	alt + l
+µ	alt + m
+Ù	alt + ù
+@	alt + `
+≤	alt + <
+‹	alt + w
+≈	alt + x
+©	alt + c
+◊	alt + v
+ß	alt + b
+~	alt + n
+∞	alt + ,
+…	alt + ;
+÷	alt + :
+≠	alt + =
+ Ÿ	alt + shift + @
+ ´	alt + shift + &
+ ”	alt + shift + « 
+ ’	alt + shift + ‘
+ [	alt + shift + (
+ ]	alt + shift + )
+ å	alt + shift + §
+ »	alt + shift + è
+ Û	alt + shift + !
+ Á	alt + shift + ç
+ Ø	alt + shift + à
+ –	alt + shift + –
+ Æ	alt + shift + a
+ Å	alt + shift + z
+Ê	alt + shift + e (pomme)
+ ‚	alt + shift + r
+™	alt + shift + t
+ Ÿ	alt + shift + y
+ ª	alt + shift + u
+ ï	alt + shift + i
+ Œ	alt + shift + o
+ ∏	alt + shift + p
+ Ω	alt + shift + q
+ ∑	alt + shift + s
+∆	alt + shift + d
+·	alt + shift + f
+ﬂ	alt + shift + g
+Î	alt + shift + h
+Í	alt + shift + j
+Ë	alt + shift + k
+|	alt + shift + l
+Ó	alt + shift + m
+‰	alt + shift + ù
+#	alt + shift + `
+≥	alt + shift + <
+›	alt + shift + w
+⁄	alt + shift + x
+¢	alt + shift + c
+√	alt + shift + v
+∫	alt + shift + b
+ı	alt + shift + n
+¿	alt + shift + ,
+•	alt + shift + ;
+\	alt + shift + :
+±	alt + shift + =
